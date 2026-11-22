@@ -1,0 +1,10 @@
+# Netlify uses "frontend" as the base directory, so paths here are relative to it.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Client-side routing (react-router BrowserRouter): serve index.html for unknown paths.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
