@@ -1,0 +1,39 @@
+{
+    "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "model": "BAAI/bge-m3",
+    "max_length": 512,
+    "sample_size": 120,
+    "model_load_seconds": 20.56,
+    "results": [
+        {
+            "batch_size": 4,
+            "documents": 120,
+            "time_seconds": 12.12,
+            "texts_per_second": 9.9,
+            "texts_per_minute": 593.86,
+            "peak_gpu_memory_gb": 1.11,
+            "dense_dimension": 1024,
+            "sparse_vectors": 120
+        },
+        {
+            "batch_size": 8,
+            "documents": 120,
+            "time_seconds": 8.79,
+            "texts_per_second": 13.65,
+            "texts_per_minute": 818.86,
+            "peak_gpu_memory_gb": 1.16,
+            "dense_dimension": 1024,
+            "sparse_vectors": 120
+        },
+        {
+            "batch_size": 16,
+            "documents": 120,
+            "time_seconds": 11.59,
+            "texts_per_second": 10.35,
+            "texts_per_minute": 621.03,
+            "peak_gpu_memory_gb": 1.24,
+            "dense_dimension": 1024,
+            "sparse_vectors": 120
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+*.db
+*.sqlite3
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/exports/*
+!data/exports/.gitkeep
+# Local Qdrant databases and runtime files
+data/qdrant_full/
+data/qdrant_server/
+data/qdrant_full_backup/
+data/qdrant_server_backup/
+*.lock
+
+# Local raw data and generated embedding files
+data/raw/
+data/embeddings/
+# Qdrant executable and local collections
+tools/qdrant/qdrant.exe
+data/qdrant_pilot/
+.qdrant-initialized
+
+# Generated embeddings and checkpoints
+data/full_corpus/
+data/pilot/*embeddings*
+data/evaluation/*embeddings*
+data/evaluation/phase2b_experiment_results.json
+
+# Generated build cache
+frontend/tsconfig.tsbuildinfo
+
+# Local runtime files
+*.sqlite
+*.sqlite3
+*.db

@@ -1,0 +1,16 @@
+{
+  "model_name": "BAAI/bge-m3",
+  "use_fp16": true,
+  "batch_size": 32,
+  "max_length": 512,
+  "vector_dim": 1024,
+  "sparse_type": "bge_m3_lexical_weights",
+  "unique_texts_encoded": 2908,
+  "elapsed_seconds": 139.94,
+  "peak_gpu_memory_mb": 1453.51,
+  "library_versions": {
+    "FlagEmbedding": "1.4.2",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1"
+  }
+}

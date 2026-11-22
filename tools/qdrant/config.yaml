@@ -1,0 +1,11 @@
+storage:
+  storage_path: c:/Users/jyoti/OneDrive/MTP_2/data/qdrant_server/storage
+  snapshots_path: c:/Users/jyoti/OneDrive/MTP_2/data/qdrant_server/snapshots
+
+service:
+  host: 127.0.0.1
+  http_port: 6333
+  grpc_port: 6334
+  enable_tls: false
+
+telemetry_disabled: true

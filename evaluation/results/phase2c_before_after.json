@@ -1,0 +1,446 @@
+{
+  "execution_summary": {
+    "total_elapsed_seconds": 2127.26,
+    "retrieval_calls": 1300,
+    "cache_hits": 760,
+    "in_memory_points_verified": 19493
+  },
+  "before_system_metrics": {
+    "A_dense_only": {
+      "total_queries": 36,
+      "queries_with_results": 36,
+      "coverage_rate": 1.0,
+      "total_professor_recommendations": 360,
+      "mean_distinct_evidence_types_per_prof": 3.253,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "candidate_publication": 353,
+        "biography": 403,
+        "research_project": 771,
+        "research_interest": 337,
+        "verified_publication": 371
+      }
+    },
+    "B_sparse_only": {
+      "total_queries": 36,
+      "queries_with_results": 7,
+      "coverage_rate": 0.1944,
+      "total_professor_recommendations": 12,
+      "mean_distinct_evidence_types_per_prof": 3.583,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "verified_publication": 29,
+        "research_interest": 11,
+        "research_project": 34,
+        "biography": 26,
+        "candidate_publication": 17
+      }
+    },
+    "C_hybrid_original": {
+      "total_queries": 36,
+      "queries_with_results": 36,
+      "coverage_rate": 1.0,
+      "total_professor_recommendations": 360,
+      "mean_distinct_evidence_types_per_prof": 2.581,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "research_project": 497,
+        "biography": 339,
+        "research_interest": 290,
+        "candidate_publication": 235,
+        "verified_publication": 521
+      }
+    },
+    "D_multi_query_hybrid": {
+      "total_queries": 36,
+      "queries_with_results": 36,
+      "coverage_rate": 1.0,
+      "total_professor_recommendations": 360,
+      "mean_distinct_evidence_types_per_prof": 3.092,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "research_project": 937,
+        "biography": 424,
+        "research_interest": 321,
+        "candidate_publication": 437,
+        "verified_publication": 690
+      }
+    }
+  },
+  "after_system_metrics": {
+    "A_dense_only": {
+      "total_queries": 36,
+      "queries_with_results": 31,
+      "coverage_rate": 0.8611,
+      "total_professor_recommendations": 300,
+      "mean_distinct_evidence_types_per_prof": 3.097,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0067,
+      "evidence_type_distribution": {
+        "candidate_publication": 324,
+        "biography": 329,
+        "research_project": 696,
+        "research_interest": 263,
+        "verified_publication": 180
+      }
+    },
+    "B_sparse_only": {
+      "total_queries": 36,
+      "queries_with_results": 7,
+      "coverage_rate": 0.1944,
+      "total_professor_recommendations": 12,
+      "mean_distinct_evidence_types_per_prof": 3.583,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "verified_publication": 29,
+        "research_interest": 11,
+        "research_project": 34,
+        "biography": 26,
+        "candidate_publication": 17
+      }
+    },
+    "C_hybrid_original": {
+      "total_queries": 36,
+      "queries_with_results": 32,
+      "coverage_rate": 0.8889,
+      "total_professor_recommendations": 306,
+      "mean_distinct_evidence_types_per_prof": 3.029,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "research_project": 579,
+        "research_interest": 272,
+        "candidate_publication": 302,
+        "biography": 349,
+        "verified_publication": 210
+      }
+    },
+    "D_multi_query_hybrid": {
+      "total_queries": 36,
+      "queries_with_results": 32,
+      "coverage_rate": 0.8889,
+      "total_professor_recommendations": 306,
+      "mean_distinct_evidence_types_per_prof": 3.467,
+      "department_only_recommendation_rate": 0.0,
+      "candidate_publication_only_rate": 0.0,
+      "evidence_type_distribution": {
+        "research_project": 1114,
+        "research_interest": 297,
+        "candidate_publication": 497,
+        "biography": 398,
+        "verified_publication": 276
+      }
+    }
+  },
+  "after_tier_counts": {
+    "A_dense_only": {
+      "related": 127,
+      "strong": 164,
+      "limited": 9,
+      "insufficient_queries": 5
+    },
+    "B_sparse_only": {
+      "insufficient_queries": 29,
+      "limited": 11,
+      "related": 1
+    },
+    "C_hybrid_original": {
+      "strong": 153,
+      "related": 153,
+      "insufficient_queries": 4
+    },
+    "D_multi_query_hybrid": {
+      "strong": 164,
+      "related": 142,
+      "insufficient_queries": 4
+    }
+  },
+  "latency_per_query_ms": {
+    "A_dense_only": {
+      "retrieval_ms": 4854.48,
+      "validation_ms": 16.98,
+      "total_ms": 4871.46
+    },
+    "B_sparse_only": {
+      "retrieval_ms": 11225.02,
+      "validation_ms": 16.29,
+      "total_ms": 11241.31
+    },
+    "C_hybrid_original": {
+      "retrieval_ms": 3.57,
+      "validation_ms": 18.57,
+      "total_ms": 22.15
+    },
+    "D_multi_query_hybrid": {
+      "retrieval_ms": 41765.53,
+      "validation_ms": 35.22,
+      "total_ms": 41800.75
+    }
+  },
+  "focus_comparison_D": {
+    "Q15": {
+      "query": "Generative AI for healthcare applications",
+      "query_type": "application",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Niloy Ganguly",
+          "CS",
+          1.3111,
+          "strong"
+        ],
+        [
+          "Goutam Saha",
+          "EC",
+          1.1948,
+          "strong"
+        ],
+        [
+          "Nirmalya Ghosh",
+          "EE",
+          1.125,
+          "related"
+        ]
+      ],
+      "after_count": 10,
+      "after_top3": [
+        [
+          "Niloy Ganguly",
+          "CS",
+          2.9073,
+          "related"
+        ],
+        [
+          "Aurobinda Routray",
+          "EE",
+          2.8214,
+          "related"
+        ],
+        [
+          "Subhamoy Mandal",
+          "MM",
+          2.4925,
+          "related"
+        ]
+      ]
+    },
+    "Q16": {
+      "query": "Natural language processing for Indian languages",
+      "query_type": "application",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Pawan Goyal",
+          "CS",
+          2.4751,
+          "strong"
+        ],
+        [
+          "Sudeshna Sarkar",
+          "CS",
+          1.5158,
+          "strong"
+        ],
+        [
+          "Krothapalli Sreenivasa Rao",
+          "CS",
+          1.4885,
+          "strong"
+        ]
+      ],
+      "after_count": 10,
+      "after_top3": [
+        [
+          "Pawan Goyal",
+          "CS",
+          3.2055,
+          "strong"
+        ],
+        [
+          "Dripta Piplai (Mondal)",
+          "HS",
+          2.8517,
+          "strong"
+        ],
+        [
+          "Krothapalli Sreenivasa Rao",
+          "CS",
+          2.8488,
+          "strong"
+        ]
+      ]
+    },
+    "Q21": {
+      "query": "3D printing and laser powder bed fusion of titanium alloys",
+      "query_type": "synonym",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Sujoy Kumar Kar",
+          "MT",
+          1.4221,
+          "strong"
+        ],
+        [
+          "Jyotsna Dutta Majumdar",
+          "MT",
+          1.0428,
+          "related"
+        ],
+        [
+          "Ratan Joarder",
+          "AE",
+          0.9469,
+          "related"
+        ]
+      ],
+      "after_count": 10,
+      "after_top3": [
+        [
+          "Jyotsna Dutta Majumdar",
+          "MT",
+          3.114,
+          "strong"
+        ],
+        [
+          "Sujoy Kumar Kar",
+          "MT",
+          2.7924,
+          "related"
+        ],
+        [
+          "Shampa Aich",
+          "MT",
+          2.7125,
+          "related"
+        ]
+      ]
+    },
+    "Q33": {
+      "query": "Medieval Byzantine numismatics and ecclesiastical iconography",
+      "query_type": "out_of_scope",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Debapratim Pandit",
+          "AR",
+          0.7459,
+          "related"
+        ],
+        [
+          "Hari V Warrior",
+          "NA",
+          0.6659,
+          "related"
+        ],
+        [
+          "Niloy Ganguly",
+          "CS",
+          0.57,
+          "related"
+        ]
+      ],
+      "after_count": 0,
+      "after_top3": []
+    },
+    "Q34": {
+      "query": "Extraterrestrial lunar regolith sintering for orbital habitat construction",
+      "query_type": "out_of_scope",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Sujoy Kanti Ghosh",
+          "GG",
+          0.8788,
+          "related"
+        ],
+        [
+          "Arnab Roy",
+          "AE",
+          0.8541,
+          "related"
+        ],
+        [
+          "Tapas Laha",
+          "MT",
+          0.7847,
+          "related"
+        ]
+      ],
+      "after_count": 0,
+      "after_top3": []
+    },
+    "Q35": {
+      "query": "Macroeconomic monetary policy in post-Brexit European central banking",
+      "query_type": "out_of_scope",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Gourishankar S Hiremath",
+          "HS",
+          1.4678,
+          "strong"
+        ],
+        [
+          "Krittika Banerjee",
+          "HS",
+          1.2292,
+          "strong"
+        ],
+        [
+          "Siddhartha Chattopadhyay",
+          "HS",
+          0.9722,
+          "related"
+        ]
+      ],
+      "after_count": 2,
+      "after_top3": [
+        [
+          "Siddhartha Chattopadhyay",
+          "HS",
+          2.5651,
+          "related"
+        ],
+        [
+          "Krittika Banerjee",
+          "HS",
+          2.1651,
+          "related"
+        ]
+      ]
+    },
+    "Q36": {
+      "query": "Ancient Mesoamerican Mayan epigraphy and calendrical astronomy",
+      "query_type": "out_of_scope",
+      "before_count": 10,
+      "before_top3": [
+        [
+          "Mahesh K",
+          "KS",
+          1.5042,
+          "strong"
+        ],
+        [
+          "Hari V Warrior",
+          "NA",
+          0.7183,
+          "related"
+        ],
+        [
+          "Chandranath Chatterjee",
+          "AG",
+          0.6224,
+          "related"
+        ]
+      ],
+      "after_count": 0,
+      "after_top3": []
+    }
+  }
+}
